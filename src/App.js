@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState } from 'react'
+import Card from './components/Card'
 
 const cardImages = [
   { "src": "/img/helmet-1.png" },
@@ -8,34 +9,34 @@ const cardImages = [
   { "src": "/img/shield-1.png" },
   { "src": "/img/sword-1.png" },
 ]
-const App = () => {
+
+function App() {
   const [cards, setCards] = useState([])
   const [turns, setTurns] = useState(0)
-  // shuffle cards
+
+  // shuffle cards for new game
   const shuffleCards = () => {
     const shuffledCards = [...cardImages, ...cardImages]
       .sort(() => Math.random() - 0.5)
-      .map(card => ({ ...card, id: Math.floor(Math.random() * 100) }))
+      .map(card => ({ ...card, id: Math.random() }))
+
     setCards(shuffledCards)
     setTurns(0)
   }
-  console.log(cards, turns)
+
   return (
     <div className="App">
       <h1>Magic Match</h1>
       <button onClick={shuffleCards}>New Game</button>
-      <div className="card grid">
-        {cards.map((card) => {
-          <div className="card" key={card.id}>
-            <div>
-              <img src={card.src} alt="card front" className="front" />
-              <img src="./img/cover.png" alt="card back" className="back" />
-            </div>
-          </div>
-        })}
+
+      <div className="card-grid">
+        {cards.map(card => (
+          <Card key={card.id} card={card} />
+        ))}
       </div>
+
     </div>
-  )
+  );
 }
 
 export default App
