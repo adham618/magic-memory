@@ -9,9 +9,11 @@ body {
   background: #1b1523;
   color: #fff;
 }
-h1,
-p {
+h1 {
   font-size: 2rem;
+}
+p {
+  font-size: 0.7rem;
 }
 .App {
   max-width: 860px;
