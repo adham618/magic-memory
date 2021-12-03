@@ -55,3 +55,8 @@ button:hover {
     width: 95%;
   }
 }
+@media (max-width: 350px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+}
