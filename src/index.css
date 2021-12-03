@@ -40,3 +40,13 @@ button:hover {
   width: 60%;
   margin: 40px auto;
 }
+@media (max-width: 650px) {
+  .card-grid {
+    width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  .card-grid {
+    width: 95%;
+  }
+}
