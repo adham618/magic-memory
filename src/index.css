@@ -37,4 +37,6 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+  width: 60%;
+  margin: 40px auto;
 }
