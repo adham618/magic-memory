@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Magic Memory
 
 ![Screenshot](screenshot.png)
 
