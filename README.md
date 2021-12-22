@@ -23,7 +23,6 @@ This repo is a simple memory game with reactjs
 
 ```sh
 src/
-
 ├── components     # Reusabble parts
 ```
 <!---
