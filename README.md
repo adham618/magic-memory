@@ -14,8 +14,7 @@ This repo is a simple memory game with reactjs
 
 - **NextJs**: Front-end framework
 <!---
-- **StyledComponents**: CSS framework
--->
+- **StyledComponents**: CSS framework -->
 - **Eslint**: Linter
 - **Prettier** Code formatter
 
